@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图灵</title>
+		<style type="text/css">
+			/**{
+				box-sizing: border-box;
+			}*/
+	@font-face {
+	font-family: 'icomoon';
+	src: url('./fonts/icomoon.eot?axvffw');
+	src: url('./fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'), url('./fonts/icomoon.ttf?axvffw') format('truetype'), url('./fonts/icomoon.woff?axvffw') format('woff'), url('./fonts/icomoon.svg?axvffw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+			* {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    body{
+    	background-color: rgb(254,67,101);
+    }
+    ul {
+ 	list-style: none;
+ }
+ 
+ a {
+ 	text-decoration: none;
+ }
+ 
+ a:link {
+ 	color: purple;
+ }
+ 
+ a:visited {
+ 	color: purple;
+ }
+ 
+ a:active {
+ 	color: green;
+ }
+ 
+ a:hover {
+ 	color: green;
+ }
+ #return {
+ 	font-family: 'icomoon';
+ 	font-size: 100px;
+ 	font-weight: 800;
+ }
+			.fu{
+				width: 1200px;
+				margin: 50px auto;
+			}
+			.div1{
+				width: 15%;
+				height: 645px;
+				border-left: 1px solid #8A9CAF;
+				background: #F4E7BD;
+				float: left;
+				padding-right: 20px;
+				/*padding-left: 10px;*/
+			}
+			.div1 ul{
+				width: 90%;
+				height: 28px;
+				
+			margin: 30px auto;
+				line-height: 18px;
+				float: left;
+				display: block;
+			}
+			.div1 ul li{
+				font-size: 14px;
+				text-align: center;
+				border-bottom: 1px solid #CCCCCC;
+				padding: 5px;
+				list-style: none;
+				margin-bottom:auto;
+				display: block;
+			}
+			.div2{
+				width: 55%;
+				height: 645px;
+				background: white;
+				float: left;
+			}
+			.div2 p{
+				
+				color: #666666;
+				font-size: 14px;
+				text-indent: 2em;
+				margin: 20px;
+				line-height: 15px;
+			}
+			#head{
+				width: 90%;
+				font-size: 13px;
+				padding: 5px;
+				border-bottom: 1px solid #CCCCCC;
+				margin: auto;
+			/*color: #666666;*/
+			}
+			#name{
+				text-align: center;
+				font-size: 25px;
+				color: #666666;
+			}
+			.div3{
+				width: 25%;
+				height: 645px;
+				background: #EABE68;
+				float:left ;
+			}
+			.div3 h1{
+				font-size: 18px;
+				margin-top: 20px;
+				margin-left: 20px;
+				/*font-weight: 900;*/
+			}
+			.div3 img{
+				width: 150px;
+				height: 145px;
+				margin-left: 20px;
+				margin-top: 20px;
+				margin-bottom: 15px;
+			}
+			.div3 p{
+				width: 85%;
+				font-size: 13px;
+				text-indent: 2em;
+				margin-top: 10px;
+				margin: auto;
+				line-height: 17px;
+			}
+		</style>
+		<link rel="shortcut icon" href="1.ico" />
+	</head>
+	<body>
+		<div>
+			<a href="c.html"><span id="return"></span></a>
+		</div>
+		<div class="fu">
+		<div class="div1">
+			<ul>
+				<li><a href="">简介</a></li>
+				<li><a href="">生平</a></li>
+				<li><a href="">故事</a></li>
+				
+			</ul>
+		
+		</div>
+		<div class="div2">
+			<p id="head">艾伦·麦席森·图灵</p>
+			<h2 id="name">如谜的解谜者</h2>
+			<p>如谜的解谜者。</p>
+
+<p>　计算，可以说是人类最先遇到的数学课题，并且在漫长的历史年代里，成为人们社会生活中不可或缺的工具．那么，什么是计算呢？直观地看，计算一般是指运用事先规定的规则，将一组数值变换为另一(所需的)数值的过程．对某一类问题，如果能找到一组确定的规则，按这组规则，当给出这类问题中的任一具体问题后，就可以完全机械地在有限步内求出结果，则说这类问题是可计算的。这种规则就是算法，这类可计算问题也可称之为存在算法的问题。这就是直观上的能行可计算或算法可计算的概念．</p>
+
+<p>图灵机是一种自动机的数学模型，它是一条两端(或一端)无限延长的纸带，上面划成方格，每个方格中可以印上某字母表中的一个字母(亦可为空格，记为S0)；又有一个读写头，它具有有限个内部状态。任何时刻读写头都注视着纸带上的某一个方格，并根据注视方格的内容以及读写头当时的内部状态而执行变换规则所规定的动作。每个图灵机都有一组变换规则</p>
+
+
+<p>图灵把可计算函数定义为图灵机可计算函数．1937年，图灵在他的“可计算性与λ可定义性”一文中证明了图灵机可计算函数与λ可定义函数是等价的，从而拓广了丘奇论点，得出：算法(能行)可计算函数等同于一般递归函数或λ可定义函数或图灵机可计算函数．这就是“丘奇-图灵论点”，相当完善地解决了可计算函数的精确定义问题，对数理逻辑的发展起了巨大的推动作用。</p>
+
+<p>图灵机的概念有十分独特的意义：如果把图灵机的内部状态解释为指令，用字母表的字来表示，与输出字输入字同样存贮在机器里，那就成为电子计算机了。由此开创了“自动机”这一学科分支，促进了电子计算机的研制工作．</p>
+
+<p>与此同时，图灵还提出了通用图灵机的概念，它相当于通用计算机的解释程序，这一点直接促进了后来通用计算机的设计和研制工作，图灵自己也参加了这一工作。
+在给出通用图灵机的同时，图灵就指出，通用图灵机在计算时，其“机械性的复杂性”是有临界限度的，超过这一限度，就要靠增加程序的长度和存贮量来解决．这种思想开启了后来计算机科学中计算复杂性理论的先河。</p>
+
+<p>图灵参与解决的另一个著名的判定问题是“半群的字的问题”，它是图埃(Thue)在1914年提出来的：对任意给定的字母表和字典，是否存在一种算法能判定两个任意给定的字是否等价[给出有限个不同的称为字母的符号，便给出了字母表，字母的有限序列称为该字母表上的字。</p>
+
+
+		</div>
+		<div class="div3">
+			<h1>作者简介</h1>
+			<img src="img/tlt.jpg"/>
+			<p>艾伦·麦席森·图灵（英语：Alan Mathison Turing，1912年6月23日—1954年6月7日），英国数学家、逻辑学家，被称为计算机科学之父，人工智能之父。1931年图灵进入剑桥大学国王学院，毕业后到美国普林斯顿大学攻读博士学位，第二次世界大战爆发后回到剑桥，后曾协助军方破解德国的著名密码系统Enigma，帮助盟军取得了二战的胜利。</p>
+			<p>1952年，英国政府对图灵的同性恋取向定罪，随后图灵接受化学阉割（雌激素注射）。1954年6月7日，图灵吃下含有氰化物的苹果中毒身亡，享年41岁。2013年12月24日，在英国司法大臣克里斯·格雷灵的要求下，英国女王伊丽莎白二世向图灵颁发了皇家赦免。</p>
+			<p>图灵对于人工智能的发展有诸多贡献，提出了一种用于判定机器是否具有智能的试验方法，即图灵试验，至今，每年都有试验的比赛。此外，图灵提出的著名的图灵机模型为现代计算机的逻辑工作方式奠定了基础。</p>
+		</div>
+		</div>
+	</body>
+</html>

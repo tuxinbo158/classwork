@@ -1,0 +1,368 @@
+ /*外部图标字体*/
+@font-face {
+	font-family: 'fontname';
+	src: url('fontname.ttf');
+}
+
+@font-face {
+	font-family: 'fonttwo';
+	src: url('fonttwo.otf');
+}
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?axvffw');
+	src: url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?axvffw') format('truetype'), url('../fonts/icomoon.woff?axvffw') format('woff'), url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+ * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    body{
+    	background-color: rgb(254,67,101);
+    }
+    ul {
+ 	list-style: none;
+ }
+ 
+ a {
+ 	text-decoration: none;
+ }
+ 
+ a:link {
+ 	color: purple;
+ }
+ 
+ a:visited {
+ 	color: purple;
+ }
+ 
+ a:active {
+ 	color: green;
+ }
+ 
+ a:hover {
+ 	color: green;
+ }
+ .head{
+ 	width: 100%;
+ 	height: 100px;
+ 	position: relative;
+ 	top: 0;
+ }
+ .head img {
+ 	width: 100%;
+ 	height: 100%;
+ 	background-size: cover;
+ }
+/*导航栏部分*/    
+    .nav {
+      width: 1000px;
+      height: 60px;
+      background-color: rgb(131,175,155);
+      margin: 0 auto;
+      border-radius 20px;
+      /*position: fixed;*/
+    }
+    
+    .nav li {
+      width: 200px;
+      height: 60px;
+      /*border: 1px solid yellow;*/
+      float: left;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .nav a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-family: 'fontname';
+      font-size: 24px;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      text-decoration: none;
+      z-index: 2;
+    }
+    
+    .nav span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      top: 60px;
+    }
+    .left {
+    	width: 350px;
+    	height: 800px;
+    	margin-left: 0px;
+    	margin-top: -60px;
+    	float: left;
+    	/*border: 1px solid red;*/
+    	background: url(../img/ggleft1.jpg) no-repeat;
+    	opacity: 0.9;
+    	box-shadow: 3px 3px 5px red;
+    	
+    }
+    .right{
+    	width: 350px;
+    	height: 800px;
+    	margin-right: 0px;
+    	margin-top: -60px;
+    	float: right;
+    	/*border: 1px solid red;*/
+    	background: url(../img/ggright.jpg) no-repeat;
+    	opacity: 0.9;
+    	box-shadow: 3px 3px 5px red;
+    }
+    .left img{
+    	width: 100%;
+ 	height: 100%;
+ 	background-size: cover;
+    }
+    .right img{
+    	width: 100%;
+ 	height: 100%;
+ 	background-size: cover;
+    }
+/*轮播图部分*/
+ .slider {
+      height: 400px;
+      width: 1000px;
+      margin: 20px auto;
+      position: relative;
+    }
+    
+    .slider li {
+      position: absolute;
+      display: none;
+      width: 100%;
+    	height: 100%;
+    }
+
+    .slider li:first-child {
+      display: block;
+    }
+    
+    
+    .arrow {
+      display: none;
+    }
+    
+    .slider:hover .arrow {
+      display: block;
+    }
+    .slider img {
+    	width: 100%;
+    	height: 100%;
+    }
+    .arrow-left,
+    .arrow-right {
+      font-family: "SimSun", "宋体";
+      width: 30px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    
+    .arrow-left:hover,
+    .arrow-right:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .arrow-left {
+      left: 0;
+    }
+    
+    .arrow-right {
+      right: 0;
+    }
+    /*tab选项卡部分*/
+    .wrapper {
+      width: 500px;
+      height: 475px;
+      margin: 0 auto;
+      margin-top: 40px;
+      
+      margin-left: 100px;
+    }
+    
+    .tab {
+      border: 1px solid #ddd;
+      border-bottom: 0;
+      height: 55px;
+      width: 400px;
+      font-weight: 800;
+      
+    }
+    
+    .tab li {
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      border-top: 4px solid #fff;
+      background-color: rgb(252,154,157);
+    }
+    
+    .tab span {
+      position: absolute;
+      right: 0;
+      top: 15px;
+      background: #ddd;
+      width: 2px;
+      height: 20px;
+      overflow: hidden;
+    }
+    
+    .products {
+      width: 500px;
+      border: 3px solid #000;
+      height: 476px;
+      background-color: rgb(200,200,169);
+      font-family: 'fontname';
+      font-size: 24px;
+      font-weight: 500;
+      text-indent: 2em;
+    }
+	
+	.products a{
+		font-weight: 900;
+	}
+	
+    .products .main {
+      float: left;
+      display: none;
+    }
+   
+    .products .main.selected {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .main.selected li{
+    	height: 50px;
+    	line-height: 50px;
+    font-style: inherit;
+    }
+    
+    .tab li.active {
+      border-color: red;
+      border-bottom: 0;
+    }
+  .search{
+  	position: absolute;
+  	/*top: 200px*/
+  	right: 350px;
+  }
+#txt{
+	width: 250px;
+	height: 35px;
+}
+#btn{
+	width: 80px;
+	height: 50px;
+	font-family: 'icomoon';
+	background-color: rgb(252,154,157);
+	border-radius: 25px;
+}
+
+/*我的学习记录部分*/
+#mystudy{
+	width: 700px;
+      height: 500px;
+ margin-left: 100px;
+      margin-top: 100px;
+      
+}
+.parentWrap {
+      width: 500px;
+      text-align:left;
+    }
+    
+    .menuGroup {
+      border:1px solid #999;
+      background-color:rgb(131,175,155);
+      /*box-shadow: 5px 5px 30px 10px #abcdef;*/
+      font-family: 'fonttwo';
+      font-size: 20px;
+      font-weight: 700;
+    }
+    
+    .groupTitle {
+      display:block;
+      height:50px;
+      line-height:50px;
+      font-size: 24px;
+      border-bottom:1px solid #ccc;
+      /*cursor:pointer;*/
+      margin-left: 10px;
+    }
+    
+    .menuGroup > div {
+      height: 300px;
+      background-color:rgb(200,200,169);
+      display:none;
+    }
+    .innner{
+    	border: 1px solid;
+    }
+    /*我的日志*/
+
+     .box {
+      width: 700px;
+      height: 1000px;
+      border: 1px solid red;
+      margin-right: 250px;
+      position: relative;
+      top: -1000px;
+      left: 700px;
+      overflow: hidden;
+    }
+
+    .content {
+      padding: 5px 18px 5px 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(200,200,169);
+      font-family: 'fontname';
+      font-size: 20px;
+      font-weight: 700;
+      text-indent: 2em;
+    }
+
+    .scroll {
+      width: 18px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #eee;
+    }
+
+    .bar {
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+      border-radius: 10px;
+      cursor: pointer;
+    }

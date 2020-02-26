@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的简历</title>
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/ten.css">
+</head>
+<body>
+<!--公用的元素-->
+<a href="c.html" class="go"><img src="images/ka.jpg"style=" width: 100%;height: 100%;"/></a>
+<a href="javascript:;" class="more"><img src="images/00-more.png" alt=""></a>
+<!--整体容器-->
+<!--1.指示器 点容器-->
+<div class="container">
+    <!--每一个切换的屏幕 背景-->
+    <div class="section screen01">
+        <!--如果是大屏幕 是基于top定位  脱离显示区域  固定在一个区域内  用一个固定大小的容器来装内容-->
+        <div class="content">
+            <!--商品列表，沙发，横幅-->
+            <div class="a1"><img src="images/my2.jpg" style="width: 200px;height: 300px;"/></div>
+            <div class="a2">五好青年</div>
+            <div class="a3">三好学生</div>
+            <div class="a4">吃货</div>
+            <div class="a5">宅男中的战斗机</div>
+            <div class="a6">精致穷</div>
+            <div class="a7">智商下限</div>
+            <div class="a8">勤劳勇敢</div>
+            <div class="a9">艰苦奋斗</div>
+            <div class="a10">爱人民</div>
+            <div class="a11">早睡早起</div>
+        </div>
+    </div>
+    <!--第二屏  动画特点：完全进入当前屏的时候执行动画-->
+    <!--1.什么时候完全进入-->
+    <!--2.怎么做动画  给大容器追加一个类  在这个类下面可以给需要做动画的元素添加动画属性-->
+    <div class="section screen02">
+        <div class="content">
+            <!--商品列表-->
+            <div class="goods"><img src="images/zhu.png" alt="" style="width: 570px;height: 246px;"></div>
+            <!--沙发-->
+            <div class="sofa"><img src="images/j01.jpg" alt=""></div>
+            <!--输入框 搜索框 关键字-->
+            <div class="input">
+                <img class="search" src="images/02-search.png" alt="">
+                 
+                 <p class="key" >菜单</p>
+            </div>
+            <!--文字-->
+            <div class="text">
+                
+                <p class="text01">我的故事很精彩</p>
+                <p class="text02">一起来看看吧</p>
+            </div>
+        </div>
+    </div>
+    <!--active 默认显示的页面-->
+    <div class="section screen03">
+        <div class="content">
+            <div class="sofa"><img src="images/j01.jpg" alt=""style="width: 237px;height: 246px;></div>
+            <div class="change">
+            	<h2>基本信息</h2>
+            	<p>姓名：屠鑫波</p>
+            	<p>性别：男</p>
+            	<p>学历：本科</p>
+            	<p>籍贯：浙江绍兴</p>
+                <p>....</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="section screen04">
+        <div class="content">
+            <!--白云-->
+            <div class="cloud"><img src="images/04-cloud.png" alt=""></div>
+            <!--文字-->
+            <div class="text">
+                <p>这是我的一些荣誉</p>
+                <p>看完你一定会想把我买走</p>
+            </div>
+            <!--购物车-->
+            <div class="cart"><img src="images/04-cart.png" alt=""></div>
+            <!--沙发-->
+            <div class="sofa"><img src="images/j01.jpg" alt=""></div>
+            <!--收货地址-->
+            <div class="address">
+                <img src="images/rongyu.png"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section screen07">
+        <div class="content">
+            <div class="star">
+                <p>即使优秀如我，</p>
+                <p>还是在不断学习！</p>
+            </div>
+            <div class="star2">
+                <p>JavaScript</p>  
+            </div>
+        </div>
+    </div>
+    <div class="section screen08">
+        <img src="images/wanzheng.png"/>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fullpage.js"></script>
+<script src="js/ten.js"></script>
+</body>
+</html>

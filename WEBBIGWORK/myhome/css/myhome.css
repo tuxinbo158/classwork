@@ -1,0 +1,508 @@
+@font-face {
+	font-family: 'fontname';
+	src: url('fontname.ttf');
+	/*src: local('fontname Regular'),
+        local('fontname'),
+        url('fontname.woff') format('woff'),
+        url('fontname.ttf') format('truetype'),
+        url('fontname.svg#fontname') format('svg');*/
+}
+
+@font-face {
+	font-family: 'fonttwo';
+	src: url('fonttwo.otf');
+}
+
+
+/*其中fontName替换为你的字体名称*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: wheat;
+}
+
+h1 {
+	font-family: 'fontname';
+	font-size: 55px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: green;
+}
+
+a:hover {
+	color: purple;
+}
+
+input {
+	display: none;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height:50px;
+	border-radius: 9px;
+}
+
+.FU1 {
+	width: 1500px;
+	height: 50px;
+position: relative;
+left: 200px;
+	/*border: 1px solid red;*/
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	z-index: 3;
+}
+
+.nav {
+	float: left;
+	margin-right: 10px;
+	display: inline-block;
+	height: 50px;
+	font-family: 'fonttwo';
+	font-size: 35px;
+}
+
+.FU2 {
+	width: 1500px;
+	height: 900px;
+	margin: auto;
+	/*margin-top: 50px;*/
+	/*border: 1px solid red;*/
+	position: relative;
+	background-color: white;
+}
+
+.F_1 {
+	box-shadow: 5px 5px 5px #000000;
+	/*border: 1px solid red;*/
+	float: left;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 270px;
+	height: 500px;
+	background: url(../img/F1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.F_2 {
+	/*border: 1px solid red;*/
+	width: 340px;
+	height: 450px;
+	float: left;
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -170px;
+}
+
+.F_2 p {
+	font-family: 'fonttwo';
+	color: gray;
+	font-size: 25px;
+}
+
+.F_3 {
+	box-shadow: 5px 5px 5px #000000;
+	/*border: 1px solid red;*/
+	float: right;
+	position: absolute;
+	top: 80px;
+	right: 200px;
+	width: 270px;
+	height: 500px;
+	background: url(../img/F1.jpg) no-repeat;
+	background-position: right;
+	background-size: cover;
+}
+
+.FU3 {
+	width: 1500px;
+	height: 900px;
+	margin: auto;
+	position: relative;
+	/*border: 1px solid red;*/
+	background: url(../img/bg1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.FU3 p {
+	display: block;
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	font-family: 'fonttwo';
+	font-size: 28px;
+	font-weight: 800;
+}
+
+#container1 {
+	box-shadow: 5px 5px 10px #808080;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.text1 {
+	position: absolute;
+	top: 150px;
+	left: 700px;
+	width: 600px;
+	height: 100px;
+}
+
+.text1 h2 {
+	font-family: 'fontname';
+	font-size: 35px;
+	font-weight: 800;
+}
+
+.text1 p {
+	display: block;
+	width: 600px;
+	height: 50px;
+	font-family: 'fontname';
+	font-size: 25px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+
+#container2 {
+	box-shadow: 5px 5px 10px #808080;
+	position: absolute;
+	top: 470px;
+	left: 100px;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.text2 {
+	position: absolute;
+	top: 450px;
+	left: 700px;
+	width: 600px;
+	height: 100px;
+}
+
+.text2 h2 {
+	font-family: 'fontname';
+	font-size: 35px;
+	font-weight: 800;
+}
+
+.text2 p {
+	display: block;
+	width: 600px;
+	height: 50px;
+	font-family: 'fontname';
+	font-size: 25px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+
+#photo1 {
+	width: 1200px;
+	animation: switch 5s ease-out infinite;
+}
+
+#photo1>img {
+	float: left;
+	width: 400px;
+	height: 300px;
+}
+
+@keyframes switch {
+	0%,
+	25% {
+		margin-left: 0;
+	}
+	35%,
+	60% {
+		margin-left: -400px;
+	}
+	70%,
+	100% {
+		margin-left: -800px;
+	}
+}
+
+#photo2 {
+	width: 1200px;
+	animation: switch 5s ease-out infinite;
+}
+
+#photo2>img {
+	float: left;
+	width: 400px;
+	height: 300px;
+}
+
+@keyframes switch {
+	0%,
+	25% {
+		margin-left: 0;
+	}
+	35%,
+	60% {
+		margin-left: -400px;
+	}
+	70%,
+	100% {
+		margin-left: -800px;
+	}
+}
+
+.FU4 {
+	width: 1500px;
+	height: 900px;
+	margin: auto;
+	position: relative;
+	/*border: 1px solid red;*/
+	background: url(../img/bg2.jpg) no-repeat;
+	background-size: cover;
+}
+
+#cons {
+	box-sizing: border-box;
+	width: 600px;
+	height: 480px;
+	/*border: 1px solid black;*/
+	position: relative;
+	overflow: hidden;
+	box-shadow: 4px 4px 5px #808080;
+}
+#lous{
+	position: absolute;
+	top: 150px;
+	left: 200px;
+}
+#cons * {
+	width: 600px;
+	height: 480px;
+	
+}
+
+#con1 {
+	background: url(../img/mm.jpg) no-repeat center;
+	background: cover;
+}
+
+#con2 {
+	background: url(../img/qs.jpg) no-repeat center;
+	background: cover;
+}
+
+#con3 {
+	 background: url(../img/cc.jpg) no-repeat center;
+	 background: cover;
+}
+
+#lou1:checked~#label1 {
+	background: black;
+	color: white;
+}
+
+#lou2:checked~#label2 {
+	background: black;
+	color: white;
+}
+
+#lou3:checked~#label3 {
+	background: black;
+	color: white;
+}
+
+#lou1:checked~#cons #con1 {
+	position: relative;
+	top: 0px;
+}
+
+#lou2:checked~#cons #con2 {
+	position: relative;
+	top: -480px;
+}
+
+#lou3:checked~#cons #con3 {
+	position: relative;
+	top: -960px;
+}
+.FU4 p{
+	display: block;
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	font-family: 'fonttwo';
+	font-size: 28px;
+	font-weight: 800;
+}
+.FU4 label{
+	margin-right: 30px;
+	font-size:25px;
+}
+.text3 {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+	width: 600px;
+	height: 100px;
+}
+
+.text3 h2 {
+	text-align: center;
+	font-family: 'fontname';
+	font-size: 35px;
+	font-weight: 800;
+}
+
+.text3 p {
+	display: block;
+	width: 600px;
+	height: 50px;
+	font-family: 'fontname';
+	font-size: 25px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+.FU5{
+	width: 1500px;
+	height: 1500px;
+	margin: auto;
+	position: relative;
+	/*border: 1px solid red;*/
+	background: url(../img/bg3.jpg) no-repeat;
+	background-size: cover;
+}
+#fu5t{
+	display: block;
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	font-family: 'fonttwo';
+	font-size: 28px;
+	font-weight: 800;
+}
+#imglist{
+	width: 530px;
+	height: 500px;
+	position: absolute;
+	top: 200px;
+	left: 100px; 		
+}
+
+.rotate_left
+{
+	-ms-transform:rotate(7deg); /* IE 9 */
+	-moz-transform:rotate(7deg); /* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari and Chrome */
+	-o-transform:rotate(7deg); /* Opera */
+	transform:rotate(7deg);
+}
+
+.rotate_right
+{
+	-ms-transform:rotate(-8deg); /* IE 9 */
+	-moz-transform:rotate(-8deg); /* Firefox */
+	-webkit-transform:rotate(-8deg); /* Safari and Chrome */
+	-o-transform:rotate(-8deg); /* Opera */
+	transform:rotate(-8deg);
+}
+#imglist img{
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	font-size: 0;
+	box-shadow: 5px 5px 5px #000000;
+}
+#imglist img:hover{
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+.text4{
+	width: 500px;
+	height: 1000px;
+	position: absolute;
+	top: 150px;
+	right: 150px;
+}
+.text4 h2 {
+	text-align: center;
+	font-family: 'fontname';
+	font-size: 35px;
+	font-weight: 800;
+}
+
+.text4 p {
+	/*display: block;
+	width: 400px;
+	height: 1000px;*/
+	font-family: 'fontname';
+	font-size: 25px;
+	line-height: 30px;
+	text-indent: 2em;
+	line-height: 30px;
+}
+.FU6{
+	width: 1500px;
+	height: 200px;
+	margin: auto;
+	position: relative;
+	/*border: 1px solid red;*/
+	background: white;
+}
+.FU6 h2{
+	display: block;
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	font-family: 'fonttwo';
+	font-size: 28px;
+	font-weight: 800;
+}
+.FU6 p{
+	display: block;
+	width: 1500px;
+	height: 30px;
+	position: absolute;
+	top: 60px;
+	font-family: 'fonttwo';
+	font-size: 25px;
+	line-height: 30px;
+	text-indent: 2em;
+	line-height: 30px;
+}

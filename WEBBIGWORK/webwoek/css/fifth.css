@@ -1,0 +1,110 @@
+
+@charset "utf-8";
+body {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 25px;
+	color: #666;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #E9DAB1;
+
+}
+
+	@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?axvffw');
+	src: url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?axvffw') format('truetype'), url('../fonts/icomoon.woff?axvffw') format('woff'), url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ #return {
+ 	font-family: 'icomoon';
+ 	font-size: 100px;
+ 	font-weight: 800;
+ }
+table p{
+		font-size: 13px;
+				text-indent: 2em;
+				line-height: 17px;
+}
+.aaa{
+	width: 50px;
+	height: 50px;
+	margin-top: -60px;
+	margin-left: -150px;
+}
+a {
+	font-size: 24px;
+	font-weight: 700;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #5A181A;
+}
+a:hover {
+	text-decoration: none;
+	color: gold;
+}
+a:active {
+	text-decoration: none;
+	color: #5A181A;
+	
+}
+.wrapper {
+	width:1000px;
+	padding-bottom:10px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 10px;
+}
+
+h1 {height:50px; line-height:50px; font-size:22px; font-weight:normal; font-family:"Microsoft YaHei",SimHei;}
+
+.shuoming {margin-top:20px; border:1px solid #ccc; padding-bottom:10px;}
+.shuoming dt {height:30px; line-height:30px; font-weight:bold; text-indent:10px;}
+.shuoming dd {line-height:20px; padding:5px 20px;}
+
+/* qqshop focus */
+#focus {width:1000px; height:280px; overflow:hidden; position:relative;}
+#focus ul {height:380px; position:absolute;}
+#focus ul li {float:left; width:1000px; height:280px; overflow:hidden; position:relative; background:#000;}
+#focus ul li div {position:absolute; overflow:hidden;}
+#focus .btnBg {position:absolute; width:1000px; height:20px; left:0; bottom:0; background:#000;}
+#focus .btn {position:absolute; width:980px; height:10px; padding:5px 10px; right:0; bottom:0; text-align:right;}
+#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:25px; height:10px; _font-size:0; margin-left:5px; cursor:pointer; background:#fff;}
+#focus .btn span.on {background:#fff;}
+#focus .preNext {width:45px; height:100px; position:absolute; top:90px; background:url(../images/sprite.png) no-repeat 0 0; cursor:pointer;}
+#focus .pre {left:0;}
+#focus .next {right:0; background-position:right top;}
+.footer {
+	color: #DAC27A;
+	height: 60px;
+	text-align: center;
+	padding-top: 20px;
+}
+.title {
+	font-size: 14px;
+	color: #5A181A;
+	font-weight: bold;
+	padding-left: 10px;
+	border-bottom-width: 1px;
+	border-left-width: 5px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #5A181A;
+	border-left-color: #5A181A;
+}
+.tr1 img:hover{
+	transform:scale(1.6)/*  大小自己改*/
+
+}
+

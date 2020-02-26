@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图灵</title>
+		<style type="text/css">
+			/**{
+				box-sizing: border-box;
+			}*/
+	@font-face {
+	font-family: 'icomoon';
+	src: url('./fonts/icomoon.eot?axvffw');
+	src: url('./fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'), url('./fonts/icomoon.ttf?axvffw') format('truetype'), url('./fonts/icomoon.woff?axvffw') format('woff'), url('./fonts/icomoon.svg?axvffw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+			* {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    body{
+    	background-color: rgb(254,67,101);
+    }
+    ul {
+ 	list-style: none;
+ }
+ 
+ a {
+ 	text-decoration: none;
+ }
+ 
+ a:link {
+ 	color: purple;
+ }
+ 
+ a:visited {
+ 	color: purple;
+ }
+ 
+ a:active {
+ 	color: green;
+ }
+ 
+ a:hover {
+ 	color: green;
+ }
+ #return {
+ 	font-family: 'icomoon';
+ 	font-size: 100px;
+ 	font-weight: 800;
+ }
+			.fu{
+				width: 1200px;
+				margin: 50px auto;
+			}
+			.div1{
+				width: 15%;
+				height: 645px;
+				border-left: 1px solid #8A9CAF;
+				background: #F4E7BD;
+				float: left;
+				padding-right: 20px;
+				/*padding-left: 10px;*/
+			}
+			.div1 ul{
+				width: 90%;
+				height: 28px;
+				
+			margin: 30px auto;
+				line-height: 18px;
+				float: left;
+				display: block;
+			}
+			.div1 ul li{
+				font-size: 14px;
+				text-align: center;
+				border-bottom: 1px solid #CCCCCC;
+				padding: 5px;
+				list-style: none;
+				margin-bottom:auto;
+				display: block;
+			}
+			.div2{
+				width: 55%;
+				height: 645px;
+				background: white;
+				float: left;
+			}
+			.div2 p{
+				
+				color: #666666;
+				font-size: 14px;
+				text-indent: 2em;
+				margin: 20px;
+				line-height: 15px;
+			}
+			#head{
+				width: 90%;
+				font-size: 13px;
+				padding: 5px;
+				border-bottom: 1px solid #CCCCCC;
+				margin: auto;
+			/*color: #666666;*/
+			}
+			#name{
+				text-align: center;
+				font-size: 25px;
+				color: #666666;
+			}
+			.div3{
+				width: 25%;
+				height: 645px;
+				background: #EABE68;
+				float:left ;
+			}
+			.div3 h1{
+				font-size: 18px;
+				margin-top: 20px;
+				margin-left: 20px;
+				/*font-weight: 900;*/
+			}
+			.div3 img{
+				width: 150px;
+				height: 145px;
+				margin-left: 20px;
+				margin-top: 20px;
+				margin-bottom: 15px;
+			}
+			.div3 p{
+				width: 85%;
+				font-size: 13px;
+				text-indent: 2em;
+				margin-top: 10px;
+				margin: auto;
+				line-height: 17px;
+			}
+		</style>
+		<link rel="shortcut icon" href="1.ico" />
+	</head>
+	<body>
+		<div>
+			<a href="c.html"><span id="return"></span></a>
+		</div>
+		<div class="fu">
+		<div class="div1">
+			<ul>
+				<li><a href="">简介</a></li>
+				<li><a href="">生平</a></li>
+				<li><a href="">故事</a></li>
+				
+			</ul>
+		
+		</div>
+		<div class="div2">
+			<p id="head">詹姆斯·高斯林</p>
+			<h2 id="name">Java之父</h2>
+			<p>Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。</p>
+
+<p>Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点 。Java可以编写桌面应用程序、Web应用程序、分布式系统和嵌入式系统应用程序等。</p>
+<p>20世纪90年代，硬件领域出现了单片式计算机系统，这种价格低廉的系统一出现就立即引起了自动控制领域人员的注意，因为使用它可以大幅度提升消费类电子产品（如电视机顶盒、面包烤箱、移动电话等）的智能化程度。Sun公司为了抢占市场先机，在1991年成立了一个称为Green的项目小组，帕特里克、詹姆斯·高斯林、麦克·舍林丹和其他几个工程师一起组成的工作小组在加利福尼亚州门洛帕克市沙丘路的一个小工作室里面研究开发新技术，专攻计算机在家电产品上的嵌入式应用。</p>
+<p>由于C++所具有的优势，该项目组的研究人员首先考虑采用C++来编写程序。但对于硬件资源极其匮乏的单片式系统来说，C++程序过于复杂和庞大。另外由于消费电子产品所采用的嵌入式处理器芯片的种类繁杂，如何让编写的程序跨平台运行也是个难题。为了解决困难，他们首先着眼于语言的开发，假设了一种结构简单、符合嵌入式应用需要的硬件平台体系结构并为其制定了相应的规范，其中就定义了这种硬件平台的二进制机器码指令系统（即后来成为“字节码”的指令系统），以待语言开发成功后，能有半导体芯片生产商开发和生产这种硬件平台。</p>
+<p>对于新语言的设计，Sun公司研发人员并没有开发一种全新的语言，而是根据嵌入式软件的要求，对C++进行了改造，去除了留在C++的一些不太实用及影响安全的成分，并结合嵌入式系统的实时性要求，开发了一种称为Oak的面向对象语言。</p>
+<p>由于在开发Oak语言时，尚且不存在运行字节码的硬件平台，所以为了在开发时可以对这种语言进行实验研究，他们就在已有的硬件和软件平台基础上，按照自己所指定的规范，用软件建设了一个运行平台，整个系统除了比C++更加简单之外，没有什么大的区别。1992年的夏天，当Oak语言开发成功后，研究者们向硬件生产商进行演示了Green操作系统、Oak的程序设计语言、类库和其硬件，以说服他们使用Oak语言生产硬件芯片，但是，硬件生产商并未对此产生极大的热情。因为他们认为，在所有人对Oak语言还一无所知的情况下，就生产硬件产品的风险实在太大了，所以Oak语言也就因为缺乏硬件的支持而无法进入市场，从而被搁置了下来。</p>
+
+		</div>
+		<div class="div3">
+			<h1>作者简介</h1>
+			<img src="img/java.jpg"/>
+			<p>詹姆斯·高斯林 （James Gosling）是一名软件专家，1955年5月19日出生于加拿大，Java编程语言的共同创始人之一，一般公认他为“Java之父”。</p>
+			<p>1977年获得了加拿大卡尔加里大学计算机科学学士学位，1983年获得了美国卡内基梅隆大学计算机科学博士学位。</p>
+			<p>博士论文的题目是："The Algebraic Manipulation of Constraints"。毕业后到IBM工作，设计IBM第一代工作站NeWS系统，但不受重视。后来转至Sun公司。1990年，与Patrick Naughton和Mike Sheridan等人合作“绿色计划”，后来发展一套语言叫做“Oak”，后改名为Java。1994年底，James Gosling在硅谷召开的“技术、教育和设计大会”上展示Java程式。2000年，Java成为世界上最流行的电脑语言。</p>
+			<p>2009年四月，Sun被甲骨文公司并购。高斯林于2010年四月时宣布从甲骨文公司离职。</p>
+			<p>2011年3月29日，高斯林在个人博客上宣布将加入Google。</p>
+		</div>
+		</div>
+	</body>
+</html>
