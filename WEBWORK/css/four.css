@@ -1,0 +1,183 @@
+ /*外部图标字体*/
+ 
+ @font-face {
+ 	font-family: 'fontname';
+ 	src: url('fontname.ttf');
+ }
+ 
+ @font-face {
+ 	font-family: 'fonttwo';
+ 	src: url('fonttwo.otf');
+ }
+ 
+ @font-face {
+ 	font-family: 'icomoon';
+ 	src: url('../fonts/icomoon.eot?axvffw');
+ 	src: url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?axvffw') format('truetype'), url('../fonts/icomoon.woff?axvffw') format('woff'), url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+ 
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ }
+ 
+ body {
+ 	background-color: #29191151;
+ }
+ 
+ ul {
+ 	list-style: none;
+ }
+ 
+ a {
+ 	text-decoration: none;
+ }
+ 
+ a:link {
+ 	color: white;
+ }
+ 
+ a:visited {
+ 	color: white;
+ }
+ 
+ a:active {
+ 	color: green;
+ }
+ 
+ a:hover {
+ 	color: purple;
+ }
+ 
+ #return {
+ 	font-family: 'icomoon';
+ 	font-size: 100px;
+ 	font-weight: 800;
+ }
+ 
+ .title {
+ 	width: 90%;
+ 	height: 60px;
+ 	position: absolute;
+ 	top: 20px;
+ 	left: 90px;
+ 	/*background:rgba(0,0,0,0.5);*/
+ 	font-family: 'fonttwo';
+ 	font-size: 50px;
+ 	text-align: center;
+ 	line-height: 60px;
+ }
+ /*精选图部分*/
+ 
+ .wrapper {
+ 	width: 1000px;
+ 	height: 500px;
+ 	margin: 80px auto 0;
+ 	border: 1px solid pink;
+ 	overflow: hidden;
+ 	position: relative;
+ }
+ .txt1{
+ 	position: absolute;
+ 	top: 120px;
+ 	left: 500px;
+ 	font-family: 'fonttwo';
+ 	font-size: 50px;
+ 	font-weight: 700;
+ }
+ #left,
+ #center
+  {
+ 	float: left;
+ }
+ #right{
+ 	float: right;
+ }
+ #left li,
+ #right li {
+ 	background: white;
+ }
+ 
+ #left li a,
+ #right li a {
+ 	display: block;
+ 	width: 83px;
+ 	height: 99px;
+ 	border-bottom: 1px solid pink;
+ 	line-height: 99px;
+ 	text-align: center;
+ 	color: black;
+ 	font-family: 'fonttwo';
+ 	font-size: 35px;
+ }
+ 
+ #left li a:hover,
+ #right li a:hover {
+ 	background:rgba(225,107,140,1);
+ }
+ 
+ #center {
+ 	width: 83%;
+ 	border-left: 1px solid pink;
+ 	border-right: 1px solid pink;
+ }
+ /*焦点图部分*/
+.txt2{
+ 	position: absolute;
+ 	top: 730px;
+ 	left: 440px;
+ 	font-family: 'fonttwo';
+ 	font-size: 50px;
+ 	font-weight: 700;
+ }
+    .wrap {
+      margin: 100px auto 0;
+      width: 1200px;
+      height: 600px;
+      padding: 10px 0 0 10px;
+      background: #000;
+      overflow: hidden;
+      border: 1px solid #fff;
+    }
+    
+    .wrap li {
+      float: left;
+      margin: 0 10px 10px 0;
+      
+    }
+    
+    .wrap img {
+      display: block;
+      border: 0;
+      width: 389px;
+      height: 290px;
+    }
+    /*手风琴部分*/
+   .txt3{
+ 	position: absolute;
+ 	top: 1480px;
+ 	left: 350px;
+ 	font-family: 'fonttwo';
+ 	font-size: 50px;
+ 	font-weight: 700;
+ }
+        #box {
+      width: 1200px;
+      height: 500px;
+      border: 2px solid #000;
+      margin: 150px auto;
+      overflow: hidden;
+    }
+
+  #box  ul {
+      width: 1300px;
+    }
+
+  #box  li {
+      width: 100px;
+      height: 100%;
+      float: left;
+    }
