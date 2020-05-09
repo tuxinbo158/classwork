@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+			<div class="container">
+				<!-- 验证样式不合法跳转-->
+				<center>
+					<h3>添加联系人页面</h3></center>
+				<form action="${pageContext.request.contextPath}/addUserServlet" method="post" onsubmit="return checkForm()">
+					<div class="form-group">
+						<label for="name">姓名：</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名" onfocus="shoeTips('tname','*用户名为长度在2-8之间的中文')" onblur="tname()" onkeyup="tname()">
+						<br />	<span id="tname"></span>
+					</div>
+
+					<div class="form-group">
+						<label>性别：</label>
+						<input type="radio" name="gender" value="男" checked="checked" />男
+						<input type="radio" name="gender" value="女" />女
+					</div>
+
+					<div class="form-group">
+						<label for="age">年龄：</label>
+						<input type="text" class="form-control" id="age" name="age" placeholder="请输入年龄" onfocus="shoeTips('tage','*年龄为1-99之间的数字')" onblur="tage()" onkeyup="tage()">
+						<br />	<span id="tage"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="address">籍贯：</label>
+						<select name="address" class="form-control" id="address">
+							<option value="陕西">陕西</option>
+							<option value="北京" selected>北京</option>
+							<option value="上海">上海</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="qq">电话：</label>
+						<input type="text" class="form-control" id="qq" name="qq" placeholder="请输入电话号码"  onfocus="shoeTips('tphone','*电话为11位数字')" onblur="tphone()" onkeyup="tphone()"/>
+						<br />	<span id="tphone"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email：</label>
+						<input type="text" class="form-control" id="email" name="email" placeholder="请输入邮箱地址" onfocus="shoeTips('temail','*输入正确的邮箱格式')" onblur="temail()" onkeyup="temail()"/>
+						<br />	<span id="temail"></span>
+					</div>
+
+					<div class="form-group" style="text-align: center">
+						<input class="btn btn-primary" type="submit" value="提交" />
+						<input class="btn btn-default" type="reset" value="重置" />
+						<input class="btn btn-default" type="button" onclick="location.href='${pageContext.request.contextPath}/findUserByPageServlet'" value="返回" />
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript">
+//				所有焦点时调用的函数
+				function shoeTips(spanId, tips) {
+				var span = document.getElementById(spanId);
+				span.style.color="red";
+				span.style.fontSize="5px";
+				span.innerHTML = tips;
+			}
+				/**
+			 * 校验用户名
+			 */
+			function tname() {
+				var value = document.getElementById("name").value;
+				var hint = document.getElementById("tname");
+				var reg = /^([\u4e00-\u9fa5]){2,8}$/i;
+				 if(reg.test(value)){
+				 	hint.innerHTML = "√用户名合格";
+					hint.style.color="green";
+					return true;
+				 }else{
+				 	hint.innerHTML = "用户名输入格式有误";
+					return false;
+				 	
+				 }
+			}
+			function tage() {
+				var value = document.getElementById("age").value;
+				var hint = document.getElementById("tage");
+				 var reg = /^([0-9]){1,99}$/i; 
+				 if(reg.test(value)){
+				 	hint.innerHTML = "√用户名合格";
+					hint.style.color="green";
+					return true;
+				 }else{
+				 	hint.innerHTML = "*年龄输入格式有误";
+					return false;
+				 	
+				 }
+			}
+			function tphone() {
+				var value = document.getElementById("qq").value;
+				var hint = document.getElementById("tphone");
+				var reg = /^[1][345678][0-9]{9}$/;
+				 if(reg.test(value)){
+				 	hint.innerHTML = "√电话合格";
+					hint.style.color="green";
+					return true;
+				 }else{
+				 	hint.innerHTML = "*电话格式不正确";
+					return false;
+				 	
+				 }
+			}
+			/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+			function temail() {
+				var value = document.getElementById("email").value;
+				var hint = document.getElementById("temail");
+				var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+				 if(reg.test(value)){
+				 	hint.innerHTML = "√邮箱合格";
+					hint.style.color="green";
+					return true;
+				 }else{
+				 	hint.innerHTML = "*邮箱格式不正确";
+					return false;
+				 	
+				 }
+			}
+			function checkForm() {
+				var flag = tname() && tage() && temail() && tphone();
+				if(!flag){
+					alert("你填写的信息还有错误哦，请认真核对！");
+					return false;
+				}else{
+					return flag;
+				}
+				
+			}
+			</script>
+		</body>
+
+</html>

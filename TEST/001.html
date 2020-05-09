@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+			<div class="container">
+				<!-- 验证样式不合法跳转-->
+				<center>
+					<h3>添加联系人页面</h3></center>
+				<form action="${pageContext.request.contextPath}/addUserServlet" method="post">
+					<div class="form-group">
+						<label for="name">姓名：</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名" onfocus="shoeTips('hint','用户名长度不能小于六')" onblur="hint_hide()" onkeyup="hint()">
+						<br />	<span id="hint"></span>
+					</div>
+
+					<div class="form-group">
+						<label>性别：</label>
+						<input type="radio" name="gender" value="男" checked="checked" />男
+						<input type="radio" name="gender" value="女" />女
+					</div>
+
+					<div class="form-group">
+						<label for="age">年龄：</label>
+						<input type="text" class="form-control" id="age" name="age" placeholder="请输入年龄">
+					</div>
+
+					<div class="form-group">
+						<label for="address">籍贯：</label>
+						<select name="address" class="form-control" id="address">
+							<option value="陕西">陕西</option>
+							<option value="北京">北京</option>
+							<option value="上海">上海</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="qq">QQ：</label>
+						<input type="text" class="form-control" id="qq" name="qq" placeholder="请输入QQ号码" />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email：</label>
+						<input type="text" class="form-control" id="email" name="email" placeholder="请输入邮箱地址" />
+					</div>
+
+					<div class="form-group" style="text-align: center">
+						<input class="btn btn-primary" type="submit" value="提交" />
+						<input class="btn btn-default" type="reset" value="重置" />
+						<input class="btn btn-default" type="button" onclick="location.href='${pageContext.request.contextPath}/findUserByPageServlet'" value="返回" />
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript">
+				function shoeTips(spanId, tips) {
+				var span = document.getElementById(spanId);
+				span.style.
+				span.innerHTML = tips;
+			}
+				/**
+			 * 校验用户名
+			 */
+			function hint() {
+				var value = document.getElementById("name").value;
+				var hint = document.getElementById("hint");
+				if(value.length < 6) {
+					hint.innerHTML = "用户名太短";
+					return false;
+				} else {
+					hint.innerHTML = "用户名合格";
+					return true;
+				}
+			}
+			</script>
+		</body>
+
+</html>

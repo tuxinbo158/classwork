@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'fontname';
+	src: url('fontname.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#box {
+	width: 500px;
+	height: 300px;
+	border: 2px solid #000;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+ul {
+	width: 1100px;
+}
+
+li {
+	width: 100px;
+	height: 300px;
+	float: left;
+}
+
+h3,
+h4 {
+	font-family: 'fontname';
+	font-weight: 700;
+}

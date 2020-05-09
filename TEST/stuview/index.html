@@ -1,0 +1,91 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<!-- 网页使用的语言 -->
+<html lang="zh-CN">
+
+	<head>
+		<!-- 指定字符集 -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>修改用户</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/base.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+
+		<div class="container" style="width: 500px;">
+			<h3 style="text-align: center;">招聘详细信息</h3>
+			<h3>${thereq.cpyname }</h3>
+			
+			<h5>公司简介：${thereq.cpyinfo }</h5>
+			<h5>岗位名称：${thereq.jobname }</h5>
+			<h5>发布时间：${thereq.reqtime }</h5>
+			<h5>需求数量：${thereq.reqnum }</h5>
+			<h5>学历要求：${thereq.educationinfo }</h5>
+			<h5>技能要求：${thereq.reqskill }</h5>
+			<h5>工作任务：${thereq.jobinfo }</h5>
+			<h5>薪资水平：${thereq.salary}</h5>
+			<h4>环境展示</h4>
+			<div id="box">
+				<ul>
+					<li><img src="../img/01.jpg" /></li>
+					<li><img src="../img/02.jpg" /></li>
+					<li><img src="../img/03.jpg" /></li>
+					<li><img src="../img/04.jpg" /></li>
+					<li><img src="../img/05.jpg" /></li>
+				</ul>
+			</div>
+			<h4>感兴趣的话就来给我们留言吧，我们将第一时间回复您哦！</h4>
+			<form action="${pageContext.request.contextPath}/askServlet" method="post" onsubmit="checkForm()" id="form1">
+				<!--  隐藏域 提交id-->
+				<input type="hidden" name="id" value="${thisuser.stulogid}">
+
+				<textarea name="content" id="content" rows="10" cols="55" >    
+       
+				</textarea>   
+				<div>是否附带个人简历:
+					<label><input type="radio" name="sex" checked>是</label>
+					<label><input type="radio" name="sex" >否</label>
+				</div>
+
+				<div class="form-group" style="text-align: center">
+					<input class="btn btn-primary" type="button" id="sub" value="提交" />
+					<input class="btn btn-default" type="reset" value="重置" />
+					<input class="btn btn-default" type="button" value="返回" />
+				</div>
+			</form>
+		</div>
+		<script src="../js/jquery-3.3.1.js"></script>
+		<script src="../js/jquery.accordion.js"></script>
+		<script>
+			$(function() {
+				var colors;
+				$("#content").blur(function(){
+					if($("#content").val().trim() == "") {
+						alert("留言内容不能为空");
+					}
+				})
+				$("#box").accordion(colors, 30);
+				$("#sub").click(function() {
+					if($("#content").val().trim() == "") {
+						alert("留言内容不能为空");
+						return;
+					}
+					if(confirm("您确定要提交吗？")) {
+						$("#form1").submit();
+					}
+				})
+				function testarea(){
+					if(document.getElementById("content").value==''){
+						alert("请输入内容!");
+						return false;
+					}
+				}
+			});
+		</script>
+	</body>
+
+</html>

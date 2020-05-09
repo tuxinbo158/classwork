@@ -1,0 +1,98 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<!-- 网页使用的语言 -->
+<html lang="zh-CN">
+
+	<head>
+		<!-- 指定字符集 -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>修改用户</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			#box {
+				width: 500px;
+				height: 300px;
+				border: 2px solid #000;
+				margin: 50px auto;
+				overflow: hidden;
+			}
+			
+			ul {
+				width: 1100px;
+			}
+			
+			li {
+				width: 100px;
+				height: 300px;
+				float: left;
+			}
+		</style>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="container" style="width: 500px;">
+			<h3 style="text-align: center;">招聘详细信息</h3>
+			<div id="box">
+
+				<ul>
+					<li><img src="img/01.jpg" /></li>
+					<li><img src="img/02.jpg" /></li>
+					<li><img src="img/03.jpg" /></li>
+					<li><img src="img/04.jpg" /></li>
+					<li><img src="img/05.jpg" /></li>
+				</ul>
+
+			</div>
+			<p>${thereq.cpyname }</p>
+			<p>${thereq.jobname }</p>
+			<p>${thereq.reqtime }</p>
+			<p>${thereq.reqnum }</p>
+			<p>${thereq.educationinfo }</p>
+			<p>${thereq.salary}</p>
+			<p>${thereq.reqskill }</p>
+			<p>${thereq.jobinfo }</p>
+			<p>${thereq.cpyinfo }</p>
+			<form action="${pageContext.request.contextPath}/updateUserServlet" method="post" onsubmit="return" id="form1">
+				<!--  隐藏域 提交id-->
+				<input type="hidden" name="id" value="${user.id}">
+
+				<div class="form-group">
+					<label for="name">姓名：</label>
+					<!-- readonly="readonly"设置名字不能被修改 -->
+					<input type="text" class="form-control" id="name" name="name" value="${user.name}" readonly="readonly" placeholder="请输入姓名" />
+				</div>
+
+				<div class="form-group" style="text-align: center">
+					<input class="btn btn-primary" type="submit" id="sub" value="提交" />
+					<input class="btn btn-default" type="reset" value="重置" />
+					<input class="btn btn-default" type="button" value="返回" />
+				</div>
+			</form>
+		</div>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/jquery.accordion.js"></script>
+		<script>
+			$(function() {
+				var colors;
+
+				$("#box").accordion(colors, 30);
+				$("#sub").click(function() {
+					if(confirm("您确定要删除吗？")) {
+						$("#form1").submit();
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>
